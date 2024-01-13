@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "book-management-api"
+version = "0.1.0"
+description = "simple book management api, to manage favourite books of users, fetch books by authors, book name, book category. Add, update, delete their books. Listing their books into favourites, wishlist."
+authors = ["Akhilesh m t <akhilesh@trigeminal-ai.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pydantic = "^2.5.3"
+fastapi = "^0.109.0"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+sqlalchemy = "^2.0.25"
+psycopg2-binary = "^2.9.9"
+uvicorn = {extras = ["standard"], version = "^0.25.0"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
